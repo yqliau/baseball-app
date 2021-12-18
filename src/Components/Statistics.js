@@ -10,8 +10,8 @@ const Statistics = (props) => {
 
     statsArray.forEach((typeObj) => {
       if (
-        typeObj.group.displayName == "hitting" ||
-        typeObj.group.displayName == "pitching"
+        typeObj.group.displayName === "hitting" ||
+        typeObj.group.displayName === "pitching"
       ) {
         const newStatsObj = {
           name: typeObj.group.displayName,
@@ -104,10 +104,11 @@ const Statistics = (props) => {
           return (
             <div key={`${statsObj.name}`} className="statistics">
               <h2>
-                {statsObj.name == "hitting" ? "Batting" : "Pitching"} Statistics
+                {statsObj.name === "hitting" ? "Batting" : "Pitching"}{" "}
+                Statistics
               </h2>
               <table cellSpacing="0">
-                {statsObj.name == "hitting" ? (
+                {statsObj.name === "hitting" ? (
                   // table to be returned if batting
                   <tbody>
                     <tr>
