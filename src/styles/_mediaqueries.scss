@@ -1,0 +1,22 @@
+@media (max-width: 600px) {
+  .team-roster {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team-logo {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .team-roster {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
