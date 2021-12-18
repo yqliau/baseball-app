@@ -79,20 +79,20 @@ const Statistics = (props) => {
 
     return (
       <tr key={seasonObj.season + `${strikeoutWalkRatio}`}>
-        <td>{seasonObj.season}</td>
-        <td>{seasonObj.team.name}</td>
-        <td>{gamesPlayed}</td>
-        <td>{gamesStarted}</td>
-        <td>{wins}</td>
-        <td>{losses}</td>
-        <td>{winPercentage}</td>
-        <td>{era}</td>
-        <td>{whip}</td>
-        <td>{inningsPitched}</td>
-        <td>{strikeOuts}</td>
-        <td>{strikeoutWalkRatio}</td>
-        <td>{hits}</td>
-        <td>{runs}</td>
+        <td>{seasonObj.season && seasonObj.season}</td>
+        <td>{seasonObj.team && seasonObj.team.name}</td>
+        <td>{gamesPlayed && gamesPlayed}</td>
+        <td>{gamesStarted && gamesStarted}</td>
+        <td>{wins && wins}</td>
+        <td>{losses && losses}</td>
+        <td>{winPercentage && winPercentage}</td>
+        <td>{era && era}</td>
+        <td>{whip && whip}</td>
+        <td>{inningsPitched && inningsPitched}</td>
+        <td>{strikeOuts && strikeOuts}</td>
+        <td>{strikeoutWalkRatio && strikeoutWalkRatio}</td>
+        <td>{hits && hits}</td>
+        <td>{runs && runs}</td>
       </tr>
     );
   };
