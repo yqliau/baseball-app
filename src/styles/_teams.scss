@@ -1,0 +1,54 @@
+.team-logo {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+}
+
+.team-container {
+  background-color: $light;
+  padding: 25px;
+
+  h3 {
+    padding-bottom: 15px;
+    text-decoration: underline;
+  }
+}
+
+.team-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  border: none;
+  background-color: $light;
+  font-family: "Roboto", sans-serif;
+
+  &:hover,
+  &:hover ~ .team-container,
+  &:focus-visible,
+  &:focus-visible ~ .team-container {
+    background-color: $slate;
+  }
+
+  i {
+    font-size: 5vh;
+    padding: 15px;
+    color: $background;
+  }
+}
+
+.team-roster {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+
+  a {
+    text-decoration: none;
+    font-family: "Roboto";
+  }
+}
+
+.inner-container {
+  border: 4px $background solid;
+}
